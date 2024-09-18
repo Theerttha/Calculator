@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color:black;">
+        <h class="heading">CALCULATOR</h>    
+        <div class="buttons">
+            <div class="row1">
+                <button class="no" onclick="r+= '&#40';
+                document.getElementById('demo').innerHTML = r;">
+                    &#40;
+                </button>
+                <button class="no" onclick="r+='&#41';
+                document.getElementById('demo').innerHTML = r;">
+                    &#41;
+                </button>
+                <button class="no" onclick="r+='/100';
+                document.getElementById('demo').innerHTML = r;">
+                    %
+                </button>
+                <button class="no" onclick="r+='/';
+                document.getElementById('demo').innerHTML = r;">
+                    /
+                </button>
+            </div>
+            <div class="row2">
+                <button class="no" onclick="r+='7';document.getElementById('demo').innerHTML = r;">
+                    7
+                </button>
+                <button class="no" onclick="r+='8';
+                document.getElementById('demo').innerHTML = r;">
+                    8
+                </button>
+                <button class="no" onclick="r+='9';
+                document.getElementById('demo').innerHTML = r;">
+                    9
+                </button>
+                <button class="no" onclick="r+='*';
+                document.getElementById('demo').innerHTML = r;">
+                    X
+                </button>
+            </div>
+            <div class="row3">
+                <button class="no" onclick="r+='4';
+                document.getElementById('demo').innerHTML = r;">
+                    4
+                </button>
+                <button class="no" onclick="r+='5';
+                document.getElementById('demo').innerHTML = r;">
+                    5
+                </button>
+                <button class="no" onclick="r+='6';
+                document.getElementById('demo').innerHTML = r;">
+                    6
+                </button>
+                <button class="no" onclick="r+='-';
+                document.getElementById('demo').innerHTML = r;">
+                    -
+                </button>
+                <div class="row2">
+
+            </div>
+            </div>
+            <div class="row4">
+                <button class="no" onclick="r+='1';
+                document.getElementById('demo').innerHTML = r;">
+                    1
+                </button>
+                <button class="no" onclick="r+='2';
+                document.getElementById('demo').innerHTML = r;">
+                    2
+                </button>
+                <button class="no" onclick="r+='3';
+                document.getElementById('demo').innerHTML = r;">
+                    3
+                </button>
+                <button class="no" onclick="r+='+';
+                document.getElementById('demo').innerHTML = r;">
+                    +
+                </button>
+            </div>
+            <div class="row5">
+                <button class="no" onclick="r='';
+                document.getElementById('demo').innerHTML =r;">
+                    clear
+                </button>
+                <button class="no" onclick="r+='0';
+                document.getElementById('demo').innerHTML = r;">
+                    0
+                </button>
+                <button class="no" onclick="r+='.';
+                document.getElementById('demo').innerHTML = r;">
+                    .
+                </button>
+                <button class="result" onclick="
+                document.getElementById('demo').innerHTML = eval(r);
+                r='';">
+                =
+                </button>
+            </div>
+        </div>
+        
+        <div class="answer">
+            <p class="text" id="demo">0 </p>
+        </div>
+        <script>
+            let r='';
+        </script>
+    </body>
+</html>
